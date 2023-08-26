@@ -6,6 +6,27 @@
 Мы заберем по специальной ссылке с сайте ЦБ РФ
 [курсы валют](https://www.cbr.ru/scripts/XML_daily.asp?date_req= "Курсы валют, устанавливаемые ЦБ РФ ежедневно"),
 страницу `xml` с курсами валют, устанавливаемых ежедневно.
+
+```xml
+<ValCurs Date="26.08.2023" name="Foreign Currency Market">
+<Valute ID="R01010">
+<NumCode>036</NumCode>
+<CharCode>AUD</CharCode>
+<Nominal>1</Nominal>
+<Name>Австралийский доллар</Name>
+<Value>60,7765</Value>
+</Valute>
+<Valute ID="R01020A">
+<NumCode>944</NumCode>
+<CharCode>AZN</CharCode>
+<Nominal>1</Nominal>
+<Name>Азербайджанский манат</Name>
+<Value>55,7128</Value>
+</Valute>
+<Valute ID="R01035">
+...
+```
+
 Я добавляю в коде сегодняшнюю дату, но ничто не мешает еам добавить одну строку для получения даты
 от пользователя или передавать ее откуда-то ещё.
 
