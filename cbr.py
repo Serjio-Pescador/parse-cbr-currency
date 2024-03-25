@@ -17,7 +17,7 @@ print(urldate, f'\nСписок курсов валют ЦБ РФ по сост�
 filtered = []
 allNews = []
 
-soup = BeautifulSoup(page.text.encode("windows_1251"), features="xml")
+soup = BeautifulSoup(page.text.encode("windows-1251"), features="xml")
 #print(soup.prettify())      #эта команда выводит всю страницу как xml в красивом виде
 
 allCurrency = soup.findAll('Valute')
